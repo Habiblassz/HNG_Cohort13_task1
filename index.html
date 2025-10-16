@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HNG_13 - Profile Card</title>
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="left main-color">profile-card</div>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<div class="profile-container" data-testid="test-profile-card">
+					<!-- Profile Section -->
+					<div class="profile-card">
+						<div class="profile-picture">
+							<figure class="profile-picture">
+								<img
+									src="main.jpg"
+									alt="Profile avatar"
+									data-testid="test-user-avatar" />
+							</figure>
+						</div>
+						<div class="profile-details">
+							<h2 data-testid="test-user-name" aria-label="name: Habib Lawal">
+								Habib Lawal
+							</h2>
+							<p class="job-title" data-testid="test-user-job-title">
+								Front-End Developer
+							</p>
+							<p class="short-bio" data-testid="test-user-bio">
+								Hello, I&apos;m a front-end developer with 4+ years of
+								experience, specializing in creating custom, pixel-perfect
+								websites with clean code and interactive animations.
+							</p>
+							<p class="current-location" data-testid="currentLocation">
+								Habib Lawal
+							</p>
+							<p class="email-address" data-testid="test-user-email">
+								lasszcodes@gmail.com
+							</p>
+							<div data-testid="test-user-social-links">
+								<nav class="social-links">
+									<a
+										href="#"
+										aria-label="Twitter"
+										data-testid="test-user-social-twitter"
+										rel="noopener noreferrer"
+										target="_blank"
+										><i class="fa-brands fa-twitter"></i
+									></a>
+									<a
+										href="https://github.com/Habiblassz"
+										target="_blank"
+										aria-label="GitHub"
+										data-testid="test-user-social-github"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-github"></i
+									></a>
+									<a
+										href="https://www.linkedin.com/in/habiblassz"
+										target="_blank"
+										aria-label="LinkedIn"
+										data-testid="test-user-social-linkedin"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-linkedin"></i
+									></a>
+								</nav>
+							</div>
+							<p class="current-time" data-testid="test-user-time"></p>
+						</div>
+					</div>
+
+					<section class="interests-section" data-testid="test-user-hobbies">
+						<h2>My Hobbies</h2>
+						<ul class="interests-grid" data-testid="test-user-hobbies">
+							<li class="interest-card hobby-card">
+								<i class="fa-solid fa-code"></i>
+								<h3>Coding</h3>
+								<p>Building projects and exploring new technologies</p>
+							</li>
+							<li class="interest-card hobby-card">
+								<i class="fa-solid fa-book-open"></i>
+								<h3>Reading</h3>
+								<p>Tech blogs, fantasy novels, and personal development</p>
+							</li>
+						</ul>
+					</section>
+
+					<!-- Dislikes Section -->
+					<section class="interests-section" data-testid="test-user-dislikes">
+						<h2>My Dislikes</h2>
+						<ul class="interests-grid" data-testid="test-user-dislikes">
+							<li class="interest-card dislike-card">
+								<i class="fa-solid fa-file-exclamation"></i>
+								<h3>Poor Code</h3>
+								<p>Unclear or missing project documentation</p>
+							</li>
+							<li class="interest-card dislike-card">
+								<i class="fa-solid fa-bugs"></i>
+								<h3>Messy Code</h3>
+								<p>Unorganized and hard-to-read codebases</p>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<p>
+				Created by <span data-testid="slackDisplayName">Lassz</span> |
+				<span data-testid="slackEmail" class="email-address"
+					>lasszcodes@gmail.com</span
+				>
+			</p>
+			<p>
+				Today is <span class="day" data-testid="currentDay"></span> and the
+				current time is
+				<span class="time" data-testid="currentTimeUTC"></span>
+			</p>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
