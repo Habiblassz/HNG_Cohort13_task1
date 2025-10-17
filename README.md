@@ -2,7 +2,7 @@
 
 HNG-projects
 
-This is the readme file for my 1nd hng project in Cohort 13
+This is the readme file for my 1st hng project in Cohort 13
 A responsive profile card project built with HTML, CSS and JavaScript that meets specific testing requirements.
 
 Prerequisites
